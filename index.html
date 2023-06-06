@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Even Blogg</title>
+
+  <style>
+    .body {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    ul {
+      grid-template-columns: 400px 200px 200px 200px 200px;
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: rgb(51, 51, 51);
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      font-family: Arial, Helvetica, sans-serif;
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 16px 35px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: red;
+    }
+
+    .active2 {
+      background-color: rgb(145, 144, 141);
+    }
+
+    .imagem {
+      float: left;
+      padding-bottom: 0%;
+    }
+
+    /*SLIDER*/
+
+    .slider {
+      margin: 0 auto;
+      width: 800px;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .slides {
+      width: 400px;
+      height: 400px;
+      display: flex;
+    }
+
+    .slides input {
+      display: none;
+    }
+
+    .slide {
+      width: -100%;
+      position: relative;
+      transition: 1s;
+    }
+
+    .slide img{
+      width: 800px;
+    }
+
+    .manual-navigation {
+      position: absolute;
+      width: 800px;
+      margin-top: -40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .manual-btn {
+      border: 2px solid white;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .manual-btn:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+      background-color: aqua;
+    }
+
+    #radio1:checked~.first {
+      margin-left: 0;
+    }
+
+    #radio2:checked~.first {
+      margin-left: -200%;
+    }
+
+    #radio3:checked~.first {
+      margin-left: -400%;
+    }
+
+    #radio4:checked~.first {
+      margin-left: -600%;
+    }
+
+    #radio5:checked~.first {
+      margin-left: -800%;
+    }
+
+    #radio6:checked~.first {
+      margin-left: -1000%;
+    }
+
+    #radio7:checked~.first {
+      margin-left: -1200%;
+    }
+    .navigation-auto div {
+      border: 2px solid rgb(255, 255, 255);
+      padding: 5px;
+      cursor: pointer;
+      transition: 1s;
+      border-radius: 10px;
+    }
+
+    .navigation-auto {
+      position: absolute;
+      width: 800px;
+      margin-top: 360px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navigation-auto div:not(:last-child){
+      margin-right: 40px;
+    }
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+      background-color: white;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+      background-color: white;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+      background-color: white;
+    }
+    #radio4:checked ~ .navigation-auto .auto-btn4{
+      background-color: white;
+    }
+   #radio5:checked ~ .navigation-auto .auto-btn5{
+      background-color: white;
+    }
+    #radio6:checked ~ .navigation-auto .auto-btn6{
+      background-color: white;
+    }
+    #radio7:checked ~ .navigation-auto .auto-btn7{
+      background-color: white;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <ul>
+        
+        <li><a href="cadastro.html" class="active2">Cadastro</a></li>
+        <img src="assets/img/banner970x50_c07_02.jpg" alt="7 blogg" class="imagem" />
+      </ul>
+
+  </header>
+  <p>
+  <h1>
+
+  </h1>
+
+  </p>
+
+  <div class="slider">
+
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <input type="radio" name="radio-btn" id="radio6">
+      <input type="radio" name="radio-btn" id="radio7">
+
+      <div class="slide first">
+        <a href="apexlegends.html">
+        <img src="assets/img/01_ApexLegends2.jpg" alt="Imagem 1" /></a>
+      </div>
+      <div class="slide">
+        <a href="cuphead.html">
+        <img src="assets/img/02_Cuphead2.jpg" alt="Imagem 2" /></a>
+      </div>
+      <div class="slide">
+        <a href="godofwar.html">
+        <img src="assets/img/03_godOfWar2.jpg" alt="Imagem 3" /></a>
+      </div>
+      <div class="slide">
+        <a href="thelastofus.html">
+        <img src="assets/img/04_TheLastOfUs2.jpg" alt="Imagem 4" /></a>
+      </div>
+      <div class="slide">
+        <a href="valorant.html">
+        <img src="assets/img//05_Valorant2.jpg" alt="Imagem 5" /></a>
+      </div>
+      <div class="slide">
+        <a href="zelda.html">
+        <img src="assets/img/06_zelda2.jpg" alt="Imagem 6" /></a>
+      </div>
+      <div class="slide">
+        <a href="warframe.html">
+        <img src="assets/img/07_warframe2.jpg" alt="Imagem 7" /></a>
+      </div>
+
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+        <div class="auto-btn6"></div>
+        <div class="auto-btn7"></div>
+      </div>
+
+    </div>
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+      <label for="radio7" class="manual-btn"></label>
+    </div>
+
+
+    <div>
+
+  </div>
+</div>
+
+    <footer>
+      <section>
+
+        <h1></h1>
+        <ul>
+                    <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </section>
+      <p class="copyright">
+      <h5>Copyright © 2023 7Even</h5>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
