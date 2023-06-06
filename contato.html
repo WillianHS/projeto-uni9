@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Contato </title>
+</head>
+<style>
+           .copyright {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            color: rgb(0, 0, 0);
+        }
+
+</style>
+
+<body>
+        
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/Mail_sent_re_0ofv.png" alt="">
+        </div>
+        
+        <div class="form-c">
+            <div class="login-button">
+                <button><a href="index.html">Voltar</a></button>
+            </div>
+            <h1>Contato</h1>
+            <h2> </h2>
+            
+            <form action="https://formsubmit.co/pankosmia2020@outlook.com" method="POST">
+                    <div class="input-box">
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" name="name" placeholder="" required>
+                </div>
+                    <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="Mensagem" placeholder="Escreva aqui sua mensagem..."></textarea>
+                </div>
+
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="next" value="Obrigado pelo seu contato!">
+
+                <button><a input type="submit" value="enviar" id="enviar" name="enviar">Enviar</a></button>
+            </form>
+
+            <div class="copyright">
+                <h5>Copyright © 2023 7Even</h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
