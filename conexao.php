@@ -1,7 +1,7 @@
 <?php
-$servidor="site-projeto-uni9-1semestre:southamerica-east1:db-7even";
+$servidor="34.95.140.108";
 $usuario="root";
-$senha="QSl180!@#Qsl180!@#";
+$senha=" ";
 $db="cadastropg";
 
 $conexao=mysqli_connect($servidor, $usuario, $senha, $db);
