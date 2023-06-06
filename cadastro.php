@@ -5,7 +5,7 @@ $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 
-$sql = "INSERT INTO cadastro(nome, email, senha) 
+$sql = "INSERT INTO usuarios(nome, email, senha) 
 VALUES ('$nome', '$email', '$senha')";
 
 if (mysqli_query($conexao, $sql)) {
@@ -28,20 +28,7 @@ mysqli_close($conexao);
 </head>
 
 <body>
-    <div class="login-button">
-        <button><a href="login.html">Entrar</a></button>
-    </div>
-
-
-    <div class="form-header">
-        
-
-
-    </div>
-
-
-    </div>
-
+    
 
 </body>
 
